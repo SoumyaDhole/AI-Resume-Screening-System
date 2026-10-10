@@ -1,0 +1,22 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.streamlit/secrets.toml
+*.log
+outputs/
+resume_screening_results.csv
+
+# Local resumes and candidate documents; never commit personal information.
+*.pdf
+*.doc
+*.docx
+*.rtf
+*.odt
+uploads/
+data/
+test_data/
+tests/generated/
+sample_data/*
+!sample_data/README.md
