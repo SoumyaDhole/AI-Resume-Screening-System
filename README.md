@@ -33,6 +33,20 @@ python -m streamlit run app.py
 
 Streamlit prints a local URL (usually `http://localhost:8501`) to open in a browser.
 
+## Screenshots
+
+![App overview](screenshots/app-overview.png)
+
+The app lets you paste a job description and upload one or more PDF resumes for screening. It extracts selectable text from each PDF and flags files that are unreadable, scanned, or empty.
+
+![Screening results](screenshots/screening-results.png)
+
+Resume text is compared with the job description using TF-IDF similarity and a skills dictionary. The tool evaluates matched and missing skills, calculates a combined score, and ranks candidates by overall score.
+
+![Export results](screenshots/export-results.png)
+
+After screening, the ranked results can be downloaded as a CSV file for sharing or further review.
+
 ## Tests
 
 ```powershell
